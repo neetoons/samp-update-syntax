@@ -1,7 +1,7 @@
 const fs = require("fs")
 const path = require("path")
 
-const file = fs.readFileSync(path.join(__dirname) + "/genovacity.pwn", "utf-8");
+const file = fs.readFileSync(path.join(__dirname) + "/input.pwn", "utf-8");
 const lines = file.split(/\n/)
 let count = 0;
 lines.forEach(line => {
@@ -20,6 +20,6 @@ lines.forEach(line => {
 	let newForeach = `new ${second} : ${first}`
 	let result = line.replace(oldForeach, newForeach)
 	console.log(`${wholeLine} -> ${newForeach}`)
-	fs.writeFileSync("out.pwn", result, {flag:"a+", encoding:"utf8"})
+	fs.writeFileSync("output.pwn", result, {flag:"a+", encoding:"utf8"})
 })
 
