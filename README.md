@@ -1,0 +1,1 @@
+"# samp-update-syntax" 
