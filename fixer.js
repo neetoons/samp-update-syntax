@@ -2,7 +2,6 @@ import { readFileSync, writeFileSync } from "fs";
 import { join } from "path";
 import ProgressBar from "progress";
 
-let lastIndex, actualIndex;
 const verbose = false;
 const file = readFileSync(join(process.cwd()) + "/test.pwn", "utf-8");
 const lines = file.split(/\n/);
